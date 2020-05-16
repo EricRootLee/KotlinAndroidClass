@@ -14,11 +14,9 @@ var seasons = 20
     for (num in 1 until 10){
         print(num)
     }
-
     for (num in 10 downTo  1 step 2){
         print(num)
     }
-
     ///Nullables
     var name : String = "Dennis"
     var namenull:String? = null
@@ -26,10 +24,7 @@ var seasons = 20
         println("am null")
     }
     //elvis operator
-
     val guestname = namenull ?: "Guest" //if the namenull is null its gona assign the guest name
     print(guestname)
-
     namenull!!.toLowerCase() //this converts a null type to a non null type ..throws a exception when the value is null
-
 }
