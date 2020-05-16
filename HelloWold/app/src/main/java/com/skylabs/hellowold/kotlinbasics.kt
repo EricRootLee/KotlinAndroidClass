@@ -21,9 +21,15 @@ var seasons = 20
 
     ///Nullables
     var name : String = "Dennis"
-    var namenull:String? ="Muli"
+    var namenull:String? = null
     namenull?.let {
         println("am null")
     }
+    //elvis operator
+
+    val guestname = namenull ?: "Guest" //if the namenull is null its gona assign the guest name
+    print(guestname)
+
+    namenull!!.toLowerCase() //this converts a null type to a non null type ..throws a exception when the value is null
 
 }
