@@ -8,17 +8,22 @@ var seasons = 20
             1,2 -> println("First 2 months")
            else -> println("Invalid response")
     }
-
     for (num in 1..10){
      println(num)
     }
-
     for (num in 1 until 10){
         print(num)
     }
 
-
     for (num in 10 downTo  1 step 2){
         print(num)
     }
+
+    ///Nullables
+    var name : String = "Dennis"
+    var namenull:String? ="Muli"
+    namenull?.let {
+        println("am null")
+    }
+
 }
