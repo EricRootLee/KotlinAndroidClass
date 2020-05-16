@@ -19,9 +19,9 @@ var seasons = 20
     }
     ///Nullables
     var name : String = "Dennis"
-    var namenull:String? = null
+    var namenull:String? = "Muli "
     namenull?.let {
-        println("am null")
+        println("am not null")
     }
     //elvis operator
     val guestname = namenull ?: "Guest" //if the namenull is null its gona assign the guest name
