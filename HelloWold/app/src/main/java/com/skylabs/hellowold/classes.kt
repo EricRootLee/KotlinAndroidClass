@@ -7,16 +7,13 @@ fun main(){
     deno.hobby = "Scatting"
     deno.stateHobby()
     deno.age = 45
-
     /////////////////class car
-
     var mycar = Car()
     mycar.maxspped = 8
     println(mycar.maxspped)
-
-
 }
 ////////////////////////////////Class Person
+
 class  Person (fname:String =" ERic" ,lname:String = "Muli"){ //you can create default classes to be called when the class is initialized with out properties
     //member variable / properties
     var age :Int? = null
