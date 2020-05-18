@@ -1,6 +1,6 @@
 # Kotlin Android Class
 >Adding a skill during a pandemic isn't bad after all
-## Topics Coverd
+## Topics Covered
 - Fundamentals Of Kotlin
 - Kotlin Classes
 - Android Application In Kotlin
