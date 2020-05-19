@@ -1,4 +1,12 @@
 package com.skylabs.hellowold
 
-interface Interface {
+interface Drivable {
+
+    val maxspeed:Double
+    fun drive():String
+    fun brake(){
+        println("The drivable is braking")
+    }
+
+
 }
