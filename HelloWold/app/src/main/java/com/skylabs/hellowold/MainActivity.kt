@@ -9,14 +9,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-       // var text = findViewById<TextView>(R.id.textView)
-     //   val btn = findViewById<Button>(R.id.button2)
-         var clicked = 0
+        // var text = findViewById<TextView>(R.id.textView)
+        //   val btn = findViewById<Button>(R.id.button2)
+        var clicked = 0
         button2.setOnClickListener {
-          //  clicked = clicked +1
-            clicked +=1
+            //  clicked = clicked +1
+            clicked += 1
             textView.text = "You Clicked Me $clicked Times";
-            Toast.makeText(this,"You Clicked me" , Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "You Clicked me", Toast.LENGTH_LONG).show()
         }
     }
 }

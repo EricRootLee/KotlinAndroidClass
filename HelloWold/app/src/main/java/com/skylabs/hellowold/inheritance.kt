@@ -1,9 +1,9 @@
 package com.skylabs.hellowold
 
-fun main(){
+fun main() {
 
-    var audi = Car1(23.2,"A3", "Audi")
-    var tesla = ElecCar(78.0,"Sm","Tesal",85.0)
+    var audi = Car1(23.2, "A3", "Audi")
+    var tesla = ElecCar(78.0, "Sm", "Tesal", 85.0)
 
     audi.drive(200.0)
     tesla.drive(200.0)
@@ -15,36 +15,38 @@ fun main(){
 
 }
 
-open class Car1 (override val maxspeed:Double, val name:String , val brand:String) : Drivable{
+open class Car1(override val maxspeed: Double, val name: String, val brand: String) : Drivable {
     override fun drive(): String {
 
         return "Driving intefcae car"
     }
 
-  open  var range:Double = 0.0
-   open fun extendRange(amount:Double){
-        if(amount>0)
-        {
-        range +=amount
+    open var range: Double = 0.0
+    open fun extendRange(amount: Double) {
+        if (amount > 0) {
+            range += amount
         }
     }
-    fun getRange(){
+
+    fun getRange() {
         println(range)
     }
 
-    open fun drive(distance:Double){
+    open fun drive(distance: Double) {
         println("Drove for $distance Km")
     }
 
 
 }
-class ElecCar( maxspeed: Double,name: String, brand: String , batterylife:Double) :Car1 (maxspeed,name,brand){
 
-    override var range = batterylife *5.5
+class ElecCar(maxspeed: Double, name: String, brand: String, batterylife: Double) :
+    Car1(maxspeed, name, brand) {
+
+    override var range = batterylife * 5.5
 
 
     override fun drive(distance: Double) {
-       println("Drove $distance on Electricity")
+        println("Drove $distance on Electricity")
     }
 
     override fun brake() {
@@ -52,8 +54,7 @@ class ElecCar( maxspeed: Double,name: String, brand: String , batterylife:Double
         println("Electric braking")
     }
 
-    override fun  drive() :String
-    {
+    override fun drive(): String {
         return "drove for $range on electicity"
     }
 
