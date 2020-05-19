@@ -43,8 +43,6 @@ class ElecCar(maxspeed: Double, name: String, brand: String, batterylife: Double
     Car1(maxspeed, name, brand) {
 
     override var range = batterylife * 5.5
-
-
     override fun drive(distance: Double) {
         println("Drove $distance on Electricity")
     }
