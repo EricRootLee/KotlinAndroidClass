@@ -15,7 +15,14 @@ fun main(){
     ///arrays using collections
 
     ///lambda expressions
+val sum = {
+    a:Int,
+        b:Int
+         -> a+b
+}
+print(sum(23,23))
 
+    //visibility modifiers
 
 
 }
