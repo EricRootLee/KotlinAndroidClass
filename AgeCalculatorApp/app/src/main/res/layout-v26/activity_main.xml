@@ -41,7 +41,6 @@
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
@@ -52,20 +51,30 @@
         android:textSize="20dp"
         android:text="@string/select_date" />
     <TextView
+        android:id="@+id/tvselect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Selected Date"
-        android:textColor="#844046"
+        android:textColor="#B7B7B7"
       android:layout_marginVertical="20sp"
         android:textSize="20sp" />
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Age In Minutes"
-        android:textColor="@color/textColor"
-        android:textStyle="bold"
-        android:textSize="25sp" />
+        android:textColor="#B7B7B7"
+        android:layout_marginVertical="20sp"
+        android:textSize="35sp" />
+    <TextView
+        android:id="@+id/ageMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Age In Munites"
+        android:textColor="#B7B7B7"
+        android:layout_marginVertical="20sp"
+        android:textSize="20sp" />
 </LinearLayout>

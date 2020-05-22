@@ -5,4 +5,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="textColor">#844046</color>
     <color name="backgroundcolor">#FEF1E0</color>
+    <color name="ageText">#FFFFFF</color>
+    <color name="agetextback">#C846DCE0</color>
 </resources>
