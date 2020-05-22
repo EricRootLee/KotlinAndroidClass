@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
                 view ->
             datePicker(view)
         }
-            Toast.makeText(this,"Test",Toast.LENGTH_LONG).show()
+          //  Toast.makeText(this,"Test",Toast.LENGTH_LONG).show()
         }
 
     private fun datePicker(view: View) {
