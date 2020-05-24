@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="#efefef"
-
+        android:gravity="right|center_vertical|bottom"
+        android:padding="10dp"
         android:textSize="48sp" />
 
     ///first row
@@ -203,6 +204,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="oNequal"
             android:text="=" />
 
     </LinearLayout>
