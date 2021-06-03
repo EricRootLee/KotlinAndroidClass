@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         btn1.setOnClickListener { view ->
             datePicker(view)
         }
@@ -49,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         val currentdayinmin = currentdate!!.time / 60000
         val minutes = (currentdayinmin - selecteddateinMinutes).toString()
         ageInMinutes.setText(minutes)
-
     }
 }
 
